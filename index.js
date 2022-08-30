@@ -20,7 +20,9 @@ Book.prototype.info = function () {
 
 function addBookToLibrary(book) {
     myLibrary.push(book);
-    return myLibrary;
+    myLibrary.forEach((book) => {
+
+    })
 }
 
 

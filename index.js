@@ -12,18 +12,28 @@ Book.prototype.info = function () {
 }
 
 
+function createBook() {
+    const author = document.querySelector('.author');
+    const title = document.querySelector('.title');
+    const pages = document.querySelector('.pages');
 
+    return new Book(author.value, title.value, pages.value);
+};
 
-
-
-
-
-function addBookToLibrary(book) {
-    myLibrary.push(book);
-    myLibrary.forEach((book) => {
-
-    })
+function addBookToLibrary(e) {
+    e.preventDefault();
+    myLibrary.push(createBook());
+    console.log(myLibrary);
 }
+
+let btn = document.querySelector('.add-book');
+btn.addEventListener("click", addBookToLibrary);
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,20 @@
+html{
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    background: none;
+    border: none;
+    font-size: 1rem;
+
+}

@@ -24,7 +24,9 @@ function addBookToLibrary(e) {
     e.preventDefault();
     myLibrary.push(createBook());
     console.log(myLibrary);
-}
+    const input = document.querySelectorAll("input");
+    input.forEach(input => input.value = "");
+};
 
 let btn = document.querySelector('.add-book');
 btn.addEventListener("click", addBookToLibrary);

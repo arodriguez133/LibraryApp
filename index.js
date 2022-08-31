@@ -26,6 +26,4 @@ function addBookToLibrary(book) {
 }
 
 
-console.log(addBookToLibrary(new Book('Lord of The Rings', 'JRR Tolkein', '1178', 'has not read')));
-
 

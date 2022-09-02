@@ -4,12 +4,17 @@ html{
 }
 
 body{
-    display: flex;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
+    font-family: "PP Neue Montreal";
+}
+
+form{
+    display: block;
+    padding-top: 25px;
+    padding-left: 20px;
+    width: min-content;
 }
 
 input{
@@ -22,13 +27,22 @@ input{
     padding: 10px;
 }
 
+.fa-plus{
+    padding-right: 5px;
+}
+
 .add-book{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 12%;
+    width: 10em;
     cursor: pointer;
-    width: 100%;
+    text-align: center;
     margin-top: 10px;
     padding: 10px;
+    border: none;
     border-radius: 5px;
     color: #fff;
     background-color: #176408;
-    border: none;
 }
